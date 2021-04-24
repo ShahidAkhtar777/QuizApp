@@ -7,7 +7,7 @@ let html_score = 0;
 let css_score = 0;
 let js_score = 0;
 let node_score = 0;
-let mongo_score = 0; 
+let php_score = 0; 
 
 
 let questions = [
@@ -69,84 +69,84 @@ let questions = [
   },
   {
       id: 9,
-      topic: "javascript",
+      topic: "JS",
       question: "  Which type of language JavaScript is ___",
       answer: "Object-Based",
       options: ['Object-Oriented', 'Object-Based', 'Assembly-language', 'High-level']
   },
   {
       id: 10,
-      topic: "javascript",
+      topic: "JS",
       question: "  Which one of the following is not a keyword:",
       answer: "use strict",
       options: ['if', 'with', 'debugger', 'use strict']
   },
   {
       id: 11,
-      topic: "javascript",
+      topic: "JS",
       question: " Which one of the following method or operator is used for identification of the array?",
       answer: "isarrayType()",
       options: ['Typeof', '==', '===' , 'isarrayType()']
   },
   {
       id: 12,
-      topic: "javascript",
+      topic: "JS",
       question: " In JavaScript, what kind of scoping is used?",
       answer: "Lexical scoping",
       options: ['Lexical scoping', 'Literal scoping', 'Sequential scoping', 'Segmental scoping']
   },
   {
       id: 13,
-      topic: "php",
+      topic: "PHP",
       question: " The term PHP is an acronym for PHP:_______________",
       answer: "Hypertext Preprocessor",
       options: ['Hypertext Preprocessor', 'Hypertext multiprocessor', 'Hypertext markup Preprocessor', 'Hypertune Preprocessor']
   },
   {
       id: 14,
-      topic: "php",
+      topic: "PHP",
       question: " PHP is a ____________ language?",
       answer: "server-side scripting",
       options: ['user-side scripting', 'client-side scripting', 'server-side scripting', 'None']
   },
   {
       id: 15,
-      topic: "php",
+      topic: "PHP",
       question: " PHP files have a default file extension of_______",
       answer: "php",
       options: ['html', 'xml', 'php', 'hphp']
   },
   {
       id: 16,
-      topic: "php",
+      topic: "PHP",
       question: " In which year php was created?",
       answer: "1994",
       options: ['1993', '1994', '1996', '1999']
   },
   {
       id: 17,
-      topic: "Node",
+      topic: "NODE",
       question: " All APIs of Node.JS are",
       answer: "Asynchronous",
       options: ['Asynchronous', 'Synchronous', 'Both', 'None']
   },
   {
       id: 18,
-      topic: "Node",
+      topic: "NODE",
       question: " Which of the following is true about readable stream?",
       answer: "Both",
       options: ['Readable stream is used for read operation', 'Output of readable stream can be input to a writable stream', 'Both', 'None']
   },
   {
       id: 19,
-      topic: "Node",
+      topic: "NODE",
       question: " Which of the following command will show all the modules installed globally?",
       answer: "$ npm ls -g",
       options: ['$ npm ls -g', '$ npm ls', '$ node ls -g', '$ node ls']
   },
   {
       id: 20,
-      topic: "Node",
+      topic: "NODE",
       question: " Which of the following code can make a request to a web server? ",
       answer: "http.request(options, callback)",
       options: ['http.request(options, callback)', 'http.createRequest(options, callback)', 'http.makeRequest(options, callback)', 'None']
@@ -184,14 +184,14 @@ function next() {
       js_score += 10;
     else if(type==="NODE")
       node_score += 10;
-    else if(type==="MONGO")
-      mongo_score += 10;
+    else if(type==="PHP")
+      php_score += 10;
    
     sessionStorage.setItem("html_score", html_score);
     sessionStorage.setItem("css_score", css_score);
     sessionStorage.setItem("js_score", js_score);
     sessionStorage.setItem("node_score",node_score);
-    sessionStorage.setItem("mongo_score",mongo_score);
+    sessionStorage.setItem("mongo_score",php_score);
   }
 
   question_count++;
