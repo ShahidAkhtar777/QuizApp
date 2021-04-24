@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Quiz</title>
+    
+    <!-- style.css -->
+    <link rel="stylesheet" href="dist/css/style.css">
+    <style>
+        .holder{
+            width: 800px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <canvas id="marksChart" width="20" height="10"></canvas>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/d56261bbb9.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <script src="dist/js/userInfo.js"></script>
+    
+    <script>
+       var marksCanvas = document.getElementById("marksChart");
+
+        var marksData = {
+        labels: ["HTML","CSS","JS","NODE.JS","MONGODB"],
+        datasets: [{
+            label: "Performance",
+            backgroundColor: "rgba(0,0,200,0.2)",
+            data: [ html_score, css_score, js_score, node_score, mongo_score ]
+        }]
+        };
+
+        var radarChart = new Chart(marksCanvas, {
+        type: 'radar',
+        data: marksData
+        });
+    </script>
+        <!-- user info -->
+    
+        <script src="dist/js/site.js"></script>
+   
+</body>
+</html>
