@@ -12,243 +12,145 @@ let mongo_score = 0;
 
 let questions = [
   {
-    id: 1,
-    question: "What is the full form of RAM ?",
-    answer: "Random Access Memory",
-    topic: "HTML",
-    options: [
-      "Random Access Memory",
-      "Randomely Access Memory",
-      "Run Aceapt Memory",
-      "None of these"
-    ]
+      id: 1,
+      topic: "HTML",
+      question: "  What does HTML stands for?",
+      answer: "Hypertext Markup Language.",
+      options: ['Hypertext Machine language.', 'Hypertext Machine language.', 'Hypertext Markup Language.', 'Hightext machine language.']
   },
   {
-    id: 2,
-    question: "What is the full form of CPU?",
-    answer: "Central Processing Unit",
-    topic: "HTML",
-    options: [
-      "Central Program Unit",
-      "Central Processing Unit",
-      "Central Preload Unit",
-      "None of these"
-    ]
+      id: 2,
+      topic: "HTML",
+      question: " The correct sequence of HTML tags for starting a webpage is -",
+      answer: "HTML, Head, Title, Body",
+      options: ['Head, Title, HTML, body', 'HTML, Body, Title, Head', 'HTML, Title,  Head, Body', 'HTML, Head, Title, Body']
   },
   {
-    id: 3,
-    question: "What is the full form of E-mail",
-    answer: "Electronic Mail",
-    topic: "HTML",
-    options: [
-      "Electronic Mail",
-      "Electric Mail",
-      "Engine Mail",
-      "None of these"
-    ]
+      id: 3,
+      topic: "HTML",
+      question: "  The hr tag in HTML is used for -",
+      answer: "horizontal ruler",
+      options: ['new line', 'vertical ruler', 'new paragraph', 'horizontal ruler']
   },
   {
-    id: 4,
-    question: "What is the full form of E-mail",
-    answer: "Electronic Mail",
-    topic: "HTML",
-    options: [
-      "Electronic Mail",
-      "Electric Mail",
-      "Engine Mail",
-      "None of these"
-    ]
+      id: 4,
+      topic: "HTML",
+      question: "Which of the following attribute is used to provide a unique name to an element?",
+      answer: "id",
+      options: ['class', 'id', 'type', 'none']
   },
   {
-    id: 5,
-    question: "What is the full form of E-mail",
-    answer: "Electronic Mail",
-    topic: "CSS",
-    options: [
-      "Electronic Mail",
-      "Electric Mail",
-      "Engine Mail",
-      "None of these"
-    ]
-  },{
-    id: 6,
-    question: "What is the full form of RAM ?",
-    answer: "Random Access Memory",
-    topic: "CSS",
-    options: [
-      "Random Access Memory",
-      "Randomely Access Memory",
-      "Run Aceapt Memory",
-      "None of these"
-    ]
+      id: 5,
+      topic: "CSS",
+      question: "  What does CSS stand for?",
+      answer: "Cascading style sheets",
+      options: ['Cascade style sheets', 'Color and style sheets', 'Cascading style sheets', ' None']
   },
   {
-    id: 7,
-    question: "What is the full form of CPU?",
-    answer: "Central Processing Unit",
-    topic: "CSS",
-    options: [
-      "Central Program Unit",
-      "Central Processing Unit",
-      "Central Preload Unit",
-      "None of these"
-    ]
+      id: 6,
+      topic: "CSS",
+      question: "  The property in CSS used to change the background color of an element is -",
+      answer: "background-color",
+      options: ['bgcolor', 'color', 'background-color', 'All of the above']
   },
   {
-    id: 8,
-    question: "What is the full form of E-mail",
-    answer: "Electronic Mail",
-    topic: "CSS",
-    options: [
-      "Electronic Mail",
-      "Electric Mail",
-      "Engine Mail",
-      "None of these"
-    ]
+      id: 7,
+      topic: "CSS",
+      question: "  The CSS property used to control the element's font-size is -",
+      answer: "font-size",
+      options: ['text-style', 'text-size', 'font-size', 'None of the above']
   },
   {
-    id: 9,
-    question: "What is the full form of E-mail",
-    answer: "Electronic Mail",
-    topic: "JS",
-    options: [
-      "Electronic Mail",
-      "Electric Mail",
-      "Engine Mail",
-      "None of these"
-    ]
+      id: 8,
+      topic: "CSS",
+      question: "  Are the negative values allowed in padding property?",
+      answer: "No",
+      options: ['Yes', 'No', 'May be', 'Can not say']
   },
   {
-    id: 10,
-    question: "What is the full form of E-mail",
-    answer: "Electronic Mail",
-    topic: "JS",
-    options: [
-      "Electronic Mail",
-      "Electric Mail",
-      "Engine Mail",
-      "None of these"
-    ]
-  },{
-    id: 11,
-    question: "What is the full form of RAM ?",
-    answer: "Random Access Memory",
-    topic: "JS",
-    options: [
-      "Random Access Memory",
-      "Randomely Access Memory",
-      "Run Aceapt Memory",
-      "None of these"
-    ]
+      id: 9,
+      topic: "javascript",
+      question: "  Which type of language JavaScript is ___",
+      answer: "Object-Based",
+      options: ['Object-Oriented', 'Object-Based', 'Assembly-language', 'High-level']
   },
   {
-    id: 12,
-    question: "What is the full form of CPU?",
-    answer: "Central Processing Unit",
-    topic: "JS",
-    options: [
-      "Central Program Unit",
-      "Central Processing Unit",
-      "Central Preload Unit",
-      "None of these"
-    ]
+      id: 10,
+      topic: "javascript",
+      question: "  Which one of the following is not a keyword:",
+      answer: "use strict",
+      options: ['if', 'with', 'debugger', 'use strict']
   },
   {
-    id: 13,
-    question: "What is the full form of E-mail",
-    answer: "Electronic Mail",
-    topic: "NODE",
-    options: [
-      "Electronic Mail",
-      "Electric Mail",
-      "Engine Mail",
-      "None of these"
-    ]
+      id: 11,
+      topic: "javascript",
+      question: " Which one of the following method or operator is used for identification of the array?",
+      answer: "isarrayType()",
+      options: ['Typeof', '==', '===' , 'isarrayType()']
   },
   {
-    id: 14,
-    question: "What is the full form of E-mail",
-    answer: "Electronic Mail",
-    topic: "NODE",
-    options: [
-      "Electronic Mail",
-      "Electric Mail",
-      "Engine Mail",
-      "None of these"
-    ]
+      id: 12,
+      topic: "javascript",
+      question: " In JavaScript, what kind of scoping is used?",
+      answer: "Lexical scoping",
+      options: ['Lexical scoping', 'Literal scoping', 'Sequential scoping', 'Segmental scoping']
   },
   {
-    id: 15,
-    question: "What is the full form of E-mail",
-    answer: "Electronic Mail",
-    topic: "NODE",
-    options: [
-      "Electronic Mail",
-      "Electric Mail",
-      "Engine Mail",
-      "None of these"
-    ]
-  },{
-    id: 16,
-    question: "What is the full form of RAM ?",
-    answer: "Random Access Memory",
-    topic: "NODE",
-    options: [
-      "Random Access Memory",
-      "Randomely Access Memory",
-      "Run Aceapt Memory",
-      "None of these"
-    ]
+      id: 13,
+      topic: "php",
+      question: " The term PHP is an acronym for PHP:_______________",
+      answer: "Hypertext Preprocessor",
+      options: ['Hypertext Preprocessor', 'Hypertext multiprocessor', 'Hypertext markup Preprocessor', 'Hypertune Preprocessor']
   },
   {
-    id: 17,
-    question: "What is the full form of CPU?",
-    answer: "Central Processing Unit",
-    topic: "MONGO",
-    options: [
-      "Central Program Unit",
-      "Central Processing Unit",
-      "Central Preload Unit",
-      "None of these"
-    ]
+      id: 14,
+      topic: "php",
+      question: " PHP is a ____________ language?",
+      answer: "server-side scripting",
+      options: ['user-side scripting', 'client-side scripting', 'server-side scripting', 'None']
   },
   {
-    id: 18,
-    question: "What is the full form of E-mail",
-    answer: "Electronic Mail",
-    topic: "MONGO",
-    options: [
-      "Electronic Mail",
-      "Electric Mail",
-      "Engine Mail",
-      "None of these"
-    ]
+      id: 15,
+      topic: "php",
+      question: " PHP files have a default file extension of_______",
+      answer: "php",
+      options: ['html', 'xml', 'php', 'hphp']
   },
   {
-    id: 19,
-    question: "What is the full form of E-mail",
-    answer: "Electronic Mail",
-    topic: "MONGO",
-    options: [
-      "Electronic Mail",
-      "Electric Mail",
-      "Engine Mail",
-      "None of these"
-    ]
+      id: 16,
+      topic: "php",
+      question: " In which year php was created?",
+      answer: "1994",
+      options: ['1993', '1994', '1996', '1999']
   },
   {
-    id: 20,
-    question: "What is the full form of E-mail",
-    answer: "Electronic Mail",
-    topic: "MONGO",
-    options: [
-      "Electronic Mail",
-      "Electric Mail",
-      "Engine Mail",
-      "None of these"
-    ]
+      id: 17,
+      topic: "Node",
+      question: " All APIs of Node.JS are",
+      answer: "Asynchronous",
+      options: ['Asynchronous', 'Synchronous', 'Both', 'None']
   },
-
+  {
+      id: 18,
+      topic: "Node",
+      question: " Which of the following is true about readable stream?",
+      answer: "Both",
+      options: ['Readable stream is used for read operation', 'Output of readable stream can be input to a writable stream', 'Both', 'None']
+  },
+  {
+      id: 19,
+      topic: "Node",
+      question: " Which of the following command will show all the modules installed globally?",
+      answer: "$ npm ls -g",
+      options: ['$ npm ls -g', '$ npm ls', '$ node ls -g', '$ node ls']
+  },
+  {
+      id: 20,
+      topic: "Node",
+      question: " Which of the following code can make a request to a web server? ",
+      answer: "http.request(options, callback)",
+      options: ['http.request(options, callback)', 'http.createRequest(options, callback)', 'http.makeRequest(options, callback)', 'None']
+  },
 ];
 
 let question_count = 0;
